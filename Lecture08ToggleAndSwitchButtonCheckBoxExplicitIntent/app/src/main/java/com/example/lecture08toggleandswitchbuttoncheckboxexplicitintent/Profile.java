@@ -38,8 +38,8 @@ public class Profile extends AppCompatActivity {
         int amount = 0;
         if (burger.isChecked()) {
 
-            result.append("Burger Rs 500 ");
-            amount += 500;
+            result.append("Burger Rs 300 ");
+            amount += 300;
         }
         if (pizza.isChecked()) {
 
