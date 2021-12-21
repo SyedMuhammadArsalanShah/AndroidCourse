@@ -15,9 +15,9 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class MainActivity2 extends AppCompatActivity {
-    private DatePicker datePicker;
-    private Calendar calendar;
-    private TextView dateView;
+    //private DatePicker datePicker;
+    Calendar c;
+    TextView dateView;
     private int year, month, day;
 
     @Override
@@ -25,15 +25,15 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        dateView = (TextView) findViewById(R.id.textView);
-        calendar = Calendar.getInstance();
-        year = calendar.get(Calendar.YEAR);
+       dateView= (TextView) findViewById(R.id.textView);
+        c = Calendar.getInstance();
+        year = c.get(Calendar.YEAR);
 
-        month = calendar.get(Calendar.MONTH);
-        day = calendar.get(Calendar.DAY_OF_MONTH);
-        showDate(year, month + 1, day);
+        month = c.get(Calendar.MONTH);
+        day = c.get(Calendar.DAY_OF_MONTH);
+        datedikahnih(year, month + 1, day);
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,8 +43,9 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 
-    private void showDate(int year, int month, int day) {
-        dateView.setText("Date"+year+"-"+month+"-"+day);
+    private void datedikahnih(int year, int month, int day) {
+
+        dateView.setText("Date"+year+"/"+month+"/"+day);
     }
 
     @Override
@@ -60,12 +61,12 @@ public class MainActivity2 extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener myDateListener = new
             DatePickerDialog.OnDateSetListener() {
                 @Override
-                public void onDateSet(DatePicker arg0, int arg1, int arg2, int arg3) {
+                public void onDateSet(DatePicker arg0, int y, int m, int d) {
                     // TODO Auto-generated method stub
-                    // arg1 = year
-                    // arg2 = month
-                    // arg3 = day
-                    showDate(arg1, arg2 + 1, arg3);
+                    // y= year
+                    // m = month
+                    // d = day
+                    datedikahnih(y,  m+ 1, d);
                 }
             };
 }
