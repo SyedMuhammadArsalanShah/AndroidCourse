@@ -26,7 +26,7 @@ TextView textView;
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
              seek = i  ;
-            textView.setText(String.valueOf(seek));
+            //textView.setText(String.valueOf(seek));
            //  Toast.makeText(SeekBarAndItsType.this,"this is our seekbar value"+seek, Toast.LENGTH_SHORT).show();
 
             };
@@ -34,14 +34,19 @@ TextView textView;
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-               // textView.setText(String.valueOf(seek));
+               //  textView.setText(String.valueOf(seek));
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-               // textView.setText(String.valueOf(seek));
+              textView.setText(String.valueOf(seek));
             }
         });
+
+
+
+
+
 
     }
 }

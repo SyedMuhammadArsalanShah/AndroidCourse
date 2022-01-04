@@ -13,6 +13,8 @@
         android:layout_height="73dp"
         android:layout_marginTop="32dp"
         android:numStars="5"
+
+         android:rating="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.768"
         app:layout_constraintStart_toStartOf="parent"

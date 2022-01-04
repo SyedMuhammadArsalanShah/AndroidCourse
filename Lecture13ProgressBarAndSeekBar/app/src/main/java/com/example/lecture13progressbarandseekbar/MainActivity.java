@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = p2.getProgress();
+                i = p2.getProgress();//initial
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -41,22 +41,21 @@ public class MainActivity extends AppCompatActivity {
 
                                     p2.setProgress(i);
                                     textView.setText(i + "/" + p2.getMax());
-                                     handler.postDelayed(new Runnable() {
-                                         @Override
-                                         public void run() {
+                               handler.postDelayed(new Runnable() {
+                                   @Override
+                                   public void run() {
+                                       Intent intent = new Intent(MainActivity.this, SeekBarAndItsType.class);
 
-                                             Intent intent =new Intent(MainActivity.this, SeekBarAndItsType.class);
-                                             startActivity(intent);
-                                         }
-                                     }, 3000 );
-
+                                       startActivity(intent);
+                                   }
+                               },5000);
                                 }
                             });
                             try {
                                 Thread.sleep(100);
 
 
-                            } catch (Exception e) {
+                            } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
 

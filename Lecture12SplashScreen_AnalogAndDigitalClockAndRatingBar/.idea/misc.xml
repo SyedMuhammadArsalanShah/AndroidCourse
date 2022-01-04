@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.20462962962962963" />
         <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/layout/activity_analog_t.xml" value="0.1921875" />
+        <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/layout/activity_clock_rate.xml" value="0.1921875" />
         <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/layout/activity_digital_t.xml" value="0.1921875" />
         <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
         <entry key="..\:/AndroidCourse/Lecture12SplashScreen_AnalogAndDigitalClockAndRatingBar/app/src/main/res/layout/activity_rating_bar.xml" value="0.2088888888888889" />

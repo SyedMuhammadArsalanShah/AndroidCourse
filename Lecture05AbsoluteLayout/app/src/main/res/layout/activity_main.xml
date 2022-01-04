@@ -10,18 +10,18 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="14dp"
-        android:layout_y="317dp"
-        android:text="Arsalan"
+        android:layout_x="40dp"
+        android:layout_y="40dp"
         android:backgroundTint="#FFFFFF"
-        android:textColor="@color/teal_700"/>
+        android:text="Arsalan"
+        android:textColor="@color/teal_700" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="148dp"
-        android:layout_y="319dp"
-        android:text="Shah"
+        android:layout_x="176dp"
+        android:layout_y="40dp"
         android:backgroundTint="#FFFFFF"
-        android:textColor="@color/teal_700"/>
+        android:text="Shah"
+        android:textColor="@color/teal_700" />
 </AbsoluteLayout>
