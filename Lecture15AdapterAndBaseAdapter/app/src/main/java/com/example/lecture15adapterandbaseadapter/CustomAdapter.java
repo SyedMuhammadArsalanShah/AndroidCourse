@@ -36,11 +36,11 @@ int images [];
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) {
 
         view = inflater.inflate(R.layout.activity_gridlist,null);
-        ImageView imageView = view.findViewById(R.id.icon);
-        imageView.setImageResource(images[i]);
+        ImageView imageView =view.findViewById(R.id.icon);
+        imageView.setImageResource(images[position]);
 
         return view;
     }

@@ -7,35 +7,16 @@ import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity {
     GridView gridView1;
-    int imagess[] = {R.drawable.pakistan,
-            R.drawable.turkey,
-            R.drawable.canada,
-            R.drawable.netherlands,
-            R.drawable.unitedarabemirates,
-            R.drawable.unitedkingdom,
-            R.drawable.pakistan,
-            R.drawable.turkey,
-            R.drawable.canada,
-            R.drawable.netherlands,
-            R.drawable.unitedarabemirates,
-            R.drawable.unitedkingdom,
-            R.drawable.pakistan,
-            R.drawable.turkey,
-            R.drawable.canada,
-            R.drawable.netherlands,
-            R.drawable.unitedarabemirates,
-            R.drawable.unitedkingdom,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-
+    int imagess[] = {
+            R.drawable.pakistan, R.drawable.turkey,
+            R.drawable.canada, R.drawable.netherlands,
+            R.drawable.unitedarabemirates, R.drawable.unitedkingdom,
+            R.drawable.pakistan, R.drawable.turkey,
+            R.drawable.canada, R.drawable.netherlands,
+            R.drawable.unitedarabemirates, R.drawable.unitedkingdom,
+            R.drawable.pakistan, R.drawable.turkey,
+            R.drawable.canada, R.drawable.netherlands,
+            R.drawable.unitedarabemirates, R.drawable.unitedkingdom,
     };
 
     @Override
