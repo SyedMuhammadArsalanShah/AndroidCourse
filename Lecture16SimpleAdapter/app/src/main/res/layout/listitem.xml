@@ -7,30 +7,37 @@
         android:id="@+id/image"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_margin="5px"
-        android:src="@drawable/ic_launcher_background"
-    />
+        android:layout_marginStart="5px"
+        android:layout_marginTop="5px"
+        android:layout_marginEnd="5px"
+        android:layout_marginBottom="5px"
+        android:src="@drawable/ic_launcher_background" />
+
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5px"
-        android:id="@+id/text"
-        android:text="Country Name"
-        android:textColor="@color/white"
-        android:textSize="30sp"
+        android:layout_marginStart="5px"
+        android:layout_marginTop="5px"
+        android:layout_marginEnd="5px"
+        android:layout_marginBottom="5px"
         android:layout_toEndOf="@id/image"
-        android:layout_marginTop="50dp"
-/>
+        android:text="Country Name"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
-        android:text="Country Description"
-        android:layout_margin="5px"
+        android:layout_marginStart="5px"
+        android:layout_marginTop="5px"
+        android:layout_marginEnd="5px"
+        android:layout_marginBottom="5px"
         android:layout_toEndOf="@id/image"
-        android:textColor="@color/white"
+        android:text="Country Description"
+        android:textColor="@color/black"
         android:textSize="30sp" />
 
 </RelativeLayout>

@@ -11,6 +11,9 @@ class CustomAdapter extends BaseAdapter{
 Context context ;
 int images [];
  LayoutInflater inflater;
+
+
+
     public CustomAdapter(Context context, int[] images) {
         this.context = context;
         this.images = images;

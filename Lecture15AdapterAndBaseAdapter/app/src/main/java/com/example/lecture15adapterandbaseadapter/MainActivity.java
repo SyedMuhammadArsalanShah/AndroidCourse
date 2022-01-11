@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         gridView1 = findViewById(R.id.gridview1);
 
-        CustomAdapter obj = new CustomAdapter(this, imagess);
+        CustomAdapter obj = new CustomAdapter(this,imagess);
         gridView1.setAdapter(obj);
     }
 }

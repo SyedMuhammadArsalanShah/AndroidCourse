@@ -3,9 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidCourse/Lecture16SimpleAdapter/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
-        <entry key="..\:/AndroidCourse/Lecture16SimpleAdapter/app/src/main/res/layout/hamza.xml" value="0.1875" />
-        <entry key="..\:/AndroidCourse/Lecture16SimpleAdapter/app/src/main/res/layout/listitem.xml" value="0.22" />
+        <entry key="..\:/AndroidCourse/Lecture17SimpleCustomAdapter/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/AndroidCourse/Lecture17SimpleCustomAdapter/app/src/main/res/layout/listitem.xml" value="0.1875" />
       </map>
     </option>
   </component>

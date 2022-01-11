@@ -1,11 +1,13 @@
-package com.example.lecture16simpleadapter;
+package com.example.lecture17simplecustomadapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         listView =findViewById(R.id.simplelistview);
 
         ArrayList<HashMap<String,String>> arrayList=new ArrayList<>();
@@ -39,11 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
         }
         String [] from= {"Name","Desc","Images" };
-         int [] to={R.id.text,R.id.text1,R.id.image};
+        int [] to={R.id.text,R.id.text1,R.id.image};
 
 
-       SimpleAdapter obj = new SimpleAdapter(this,arrayList,R.layout.listitem,from,to);
-       listView.setAdapter(obj);
+        SimpleCutomAdapter obj = new SimpleCutomAdapter(this,arrayList,R.layout.listitem,from,to);
+        listView.setAdapter(obj);
+         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+             @Override
+             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                 Toast.makeText(getApplicationContext(),fname[i] , Toast.LENGTH_LONG).show();
+             }
+         });
+
     }
-
 }
