@@ -32,4 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void ord(View view) {
+        Intent intent = new Intent(this, ImplicitIntent.class);
+        startActivity(intent);
+
+
+
+
+    }
 }
