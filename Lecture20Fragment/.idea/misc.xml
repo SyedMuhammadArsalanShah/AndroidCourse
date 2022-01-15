@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidCourse/Lecture09Intents/app/src/main/res/layout/activity_implicit_intent.xml" value="0.22" />
-        <entry key="..\:/AndroidCourse/Lecture09Intents/app/src/main/res/layout/activity_main.xml" value="0.178125" />
-        <entry key="..\:/AndroidCourse/Lecture09Intents/app/src/main/res/layout/activity_profile.xml" value="0.1921875" />
+        <entry key="..\:/AndroidCourse/Lecture20Fragment/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidCourse/Lecture20Fragment/app/src/main/res/layout/fragment_f1.xml" value="0.33" />
+        <entry key="..\:/AndroidCourse/Lecture20Fragment/app/src/main/res/layout/fragment_f2.xml" value="0.178125" />
+        <entry key="..\:/AndroidCourse/Lecture20Fragment/app/src/main/res/layout/fragment_f3.xml" value="0.1921875" />
       </map>
     </option>
   </component>
