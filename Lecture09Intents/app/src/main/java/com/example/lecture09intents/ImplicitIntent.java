@@ -44,7 +44,7 @@ public class ImplicitIntent extends AppCompatActivity {
             public void onClick(View view) {
                 String url= editText.getText().toString();
 
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://"+url));
                 startActivity(intent);
 
             }

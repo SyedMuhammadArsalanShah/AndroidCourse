@@ -77,7 +77,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CB342"
         android:onClick="submit"
-        android:text="SignUp"
+        android:text="Exx"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
