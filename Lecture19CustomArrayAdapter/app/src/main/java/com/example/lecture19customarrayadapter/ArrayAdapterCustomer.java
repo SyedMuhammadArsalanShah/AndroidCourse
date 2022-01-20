@@ -38,8 +38,11 @@ class ArrayAdapterCustomer extends ArrayAdapter {
         convertView=LayoutInflater.from(context).inflate(R.layout.gridview, null);
         ImageView imageView = convertView.findViewById(R.id.image);
         TextView textView = convertView.findViewById(R.id.text);
-        imageView.setImageResource(dataArrayList.get(position).getImages());
-        textView.setText(dataArrayList.get(position).getName());
+        imageView.setImageResource( dataArrayList.get(position ).getImages());
+        textView.setText( dataArrayList.get(position ).getName());
         return convertView;
     }
+
+
+
 }

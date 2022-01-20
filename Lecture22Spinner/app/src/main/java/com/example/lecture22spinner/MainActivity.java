@@ -13,16 +13,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
-    ImageView imageView;
+    TextView textView;
     Spinner spinner;
     String[] classes = {" ","Maryam", "Hamza","Zain", "Maaz", "Bilal", "Daniyal"};
-    int [] image= {R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background};
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         spinner = findViewById(R.id.spinner);
-        imageView = findViewById(R.id.textView);
+        textView = findViewById(R.id.textView);
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, classes);
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
        // Toast.makeText(getApplicationContext(), classes[i]+"Maryam", Toast.LENGTH_SHORT).show();
 
-        imageView.setImageResource(image[i]);
+        textView.setText(classes[i]);
 
     }
 
