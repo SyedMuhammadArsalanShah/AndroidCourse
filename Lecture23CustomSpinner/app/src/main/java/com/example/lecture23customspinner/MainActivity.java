@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         spinner = findViewById(R.id.spinner);
+        arrayList.add(new Data("Pakistan", R.drawable.pakistan));
+        arrayList.add(new Data("Turkey", R.drawable.turkey));
+        arrayList.add(new Data("Canada", R.drawable.canada));
+        arrayList.add(new Data("UAE", R.drawable.unitedarabemirates));
+        arrayList.add(new Data("UK", R.drawable.unitedkingdom));
+        arrayList.add(new Data("Netherland", R.drawable.netherlands));
         initList();
         imageView = findViewById(R.id.image);
         text = findViewById(R.id.text);
@@ -32,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 String name = arrayList.get(position).getName();
-                int image = arrayList.get(position).getImage();
+                int image = arrayList.get(position).getImagee();
                 text.setText(name);
                 imageView.setImageResource(image);
 

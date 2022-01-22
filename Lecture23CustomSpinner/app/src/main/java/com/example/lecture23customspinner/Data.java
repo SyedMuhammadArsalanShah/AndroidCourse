@@ -4,10 +4,13 @@ class Data {
 
     String name;
     int image;
+
     public Data(String name, int image) {
         this.name = name;
         this.image = image;
     }
+
+
     public String getName() {
         return name;
     }
@@ -16,13 +19,11 @@ class Data {
         this.name = name;
     }
 
-    public int getImage() {
+    public int getImagee() {
         return image;
     }
 
     public void setImage(int image) {
         this.image = image;
     }
-
-
 }

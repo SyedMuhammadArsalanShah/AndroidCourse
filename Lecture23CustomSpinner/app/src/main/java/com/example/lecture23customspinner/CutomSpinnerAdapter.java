@@ -44,7 +44,7 @@ class CutomSpinnerAdapter extends BaseAdapter {
         view = LayoutInflater.from(context).inflate(R.layout.listitem, null);
         ImageView icon = (ImageView) view.findViewById(R.id.image);
         TextView names = (TextView) view.findViewById(R.id.text);
-        icon.setImageResource(dataArrayList.get(position).getImage());
+        icon.setImageResource(dataArrayList.get(position).getImagee());
         names.setText(dataArrayList.get(position).getName());
 
         return view;
