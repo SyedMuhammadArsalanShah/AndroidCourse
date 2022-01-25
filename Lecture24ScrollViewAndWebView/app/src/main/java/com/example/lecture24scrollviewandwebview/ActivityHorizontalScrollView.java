@@ -37,17 +37,17 @@ public class ActivityHorizontalScrollView extends AppCompatActivity {
         webView.loadUrl("https://github.com/SyedMuhammadArsalanShah/Java");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        Toast.makeText(this, "Asp", Toast.LENGTH_SHORT).show();
+
     }
 
     public void androidclick(View view) {
 
-        Toast.makeText(this, "Andoid course loading", Toast.LENGTH_SHORT).show();
+
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://github.com/SyedMuhammadArsalanShah/AndroidCourse");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        Toast.makeText(this, "Asp", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Andoid course loading", Toast.LENGTH_SHORT).show();
     }
 
     public void html(View view) {
