@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.list);
-        arrayList.add(new Data("Pakistan", "Pakistan"));
+        arrayList.add(new Data("Pakistan", "Pakistan",R.drawable.ic_launcher_background));
         arrayList.add(new Data("Pakistan", "Pakistan1"));
         arrayList.add(new Data("Pakistan", "Pakistan2"));
         arrayList.add(new Data("Pakistan", "Pakistan3"));
@@ -46,11 +46,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String name, des;
+                int image ;
                 name = arrayList.get(i).getName();
                 des = arrayList.get(i).getDes();
+                image=arrayList.get(i).getImage();
                 Intent detailIntent = new Intent(MainActivity.this, Detail.class);
                 detailIntent.putExtra("name",name);
                 detailIntent.putExtra("des",des);
+                detailIntent.putExtra("img",image);
                 startActivity(detailIntent);
                 Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
 

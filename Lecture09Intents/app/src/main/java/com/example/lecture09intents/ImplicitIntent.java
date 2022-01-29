@@ -27,8 +27,7 @@ public class ImplicitIntent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-                Intent intent=new Intent(Intent.ACTION_VIEW);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://github.com/SyedMuhammadArsalanShah/AndroidCourse"));
                 startActivity(intent);
 
