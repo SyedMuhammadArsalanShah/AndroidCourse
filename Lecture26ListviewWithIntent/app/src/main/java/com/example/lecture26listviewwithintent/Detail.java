@@ -20,9 +20,9 @@ ImageView imageView;
         imageView =findViewById(R.id.imageView);
 
         Bundle bundle=getIntent().getExtras();
-        String name=bundle.getString("name");
-        String desc=bundle.getString("des");
-        int img=bundle.getInt("img");
+        String name=bundle.getString("key1");
+        String desc=bundle.getString("key2");
+        int img=bundle.getInt("key3");
         textView.setText(name);
         textView1.setText(desc);
         imageView.setImageResource(img);

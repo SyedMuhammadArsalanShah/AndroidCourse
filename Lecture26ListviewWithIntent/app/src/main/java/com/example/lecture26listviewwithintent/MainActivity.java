@@ -25,8 +25,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.list);
+
+
+
         arrayList.add(new Data("Pakistan", "Pakistan",R.drawable.ic_launcher_background));
-        arrayList.add(new Data("Pakistan", "Pakistan1"));
+        arrayList.add(new Data("Pakistan",R.drawable.ic_launcher_foreground));
         arrayList.add(new Data("Pakistan", "Pakistan2"));
         arrayList.add(new Data("Pakistan", "Pakistan3"));
         arrayList.add(new Data("Pakistan", "Pakista4"));
@@ -35,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Data("Pakistan", "Pakistan7"));
         arrayList.add(new Data("Turkey", "Pakistan7"));
         arrayList.add(new Data("Canada", "Pakistan8"));
-        arrayList.add(new Data("UAE", "Pakistan56"));
-        arrayList.add(new Data("UK", "Pakistan66"));
-        arrayList.add(new Data("Netherland", "Pakistan666"));
+        arrayList.add(new Data("UAE", "Pakistan56",R.drawable.ic_launcher_background));
+        arrayList.add(new Data("UK", "Pakistan66",R.drawable.ic_launcher_background));
+        arrayList.add(new Data("Netherland", "Pakistan666",R.drawable.ic_launcher_background));
 
         CustomAdapter obj = new CustomAdapter(this, arrayList);
 
@@ -51,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 des = arrayList.get(i).getDes();
                 image=arrayList.get(i).getImage();
                 Intent detailIntent = new Intent(MainActivity.this, Detail.class);
-                detailIntent.putExtra("name",name);
-                detailIntent.putExtra("des",des);
-                detailIntent.putExtra("img",image);
+                detailIntent.putExtra("key1",name);
+                detailIntent.putExtra("key2",des);
+                detailIntent.putExtra("key3",image);
                 startActivity(detailIntent);
                 Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
 

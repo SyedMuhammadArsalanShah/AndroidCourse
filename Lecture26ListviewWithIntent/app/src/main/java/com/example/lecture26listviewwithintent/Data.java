@@ -16,6 +16,11 @@ class Data {
         this.des = des;
     }
 
+    public Data(String name, int image) {
+        this.name = name;
+        this.image = image;
+    }
+
     public String getName() {
         return name;
     }
