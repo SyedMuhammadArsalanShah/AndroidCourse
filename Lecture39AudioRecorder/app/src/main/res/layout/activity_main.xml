@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <!--Heading Text View-->
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="audio recorder"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <!--This will display the status of our app when
+        we will record some audio and play that audio-->
+    <TextView
+        android:id="@+id/idTVstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="status"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <!--Linear Layout for adding textviews
+        in horizontal manner-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!--Textview to start audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:text="start_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_baseline_mic_24" />
+        <!--Textview to stop audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:text="stop_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_baseline_mic_off_24" />
+
+        <!--Textview to play audio that is recorded
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:text="play_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_baseline_play_arrow_24" />
+
+        <!--Textview to pause the play of audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnStopPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:drawableTint="@color/white"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="stop_playing"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_baseline_stop_24" />
+
+    </LinearLayout>
+
+</RelativeLayout>
