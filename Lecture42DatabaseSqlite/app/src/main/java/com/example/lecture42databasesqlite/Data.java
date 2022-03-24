@@ -60,13 +60,40 @@ class Data extends SQLiteOpenHelper {
             obj.setId(Integer.parseInt(cursor.getString(0)));
             obj.setName((cursor.getString(1)));
             obj.setContact((cursor.getString(2)));
-            contactList.add( obj);
+            contactList.add(obj);
+
 
 
         }while (cursor.moveToNext());
 
         }
         return contactList;
+
+
     }
 
+
+
+    public int updateRecord(Contact contact){
+        SQLiteDatabase db  = this.getWritableDatabase();
+        ContentValues values= new ContentValues();
+        values.put(Params.KEY_NAME, contact.getName());
+        values.put(Params.KEY_CONTACT,contact.getContact());
+        return  db.update(Params.DB_TABLE,values,Params.KEY_ID+"=?" ,new String[]{String.valueOf(contact.getId())});
+
+    }
+    //byusing object
+    public void deleteRecord(Contact contact){
+        SQLiteDatabase db  = this.getWritableDatabase();
+
+       db.delete(Params.DB_TABLE,Params.KEY_ID+"=?" ,new String[]{String.valueOf(contact.getId())});
+       db.close();
+    }
+
+    public void deleteRecordbyid(int id){
+        SQLiteDatabase db  = this.getWritableDatabase();
+
+        db.delete(Params.DB_TABLE,Params.KEY_ID+"=?" ,new String[]{String.valueOf(id)});
+        db.close();
+    }
 }

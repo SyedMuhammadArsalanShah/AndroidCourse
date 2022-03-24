@@ -31,12 +31,46 @@ public class MainActivity extends AppCompatActivity {
 
         // Adding a contact to the db
         db.addContact(contact3);
+
+
+
+
         Contact contact1 = new Contact();
         contact1.setContact("0312");
         contact1.setName("Daniyal");
 
         // Adding a contact to the db
         db.addContact(contact1);
+
+
+        //update in db
+         contact1.setId(27);
+         contact1.setName("Daniyal Nasir");
+         contact1.setContact("0307-1234567");
+
+
+         //delete by id
+        db.deleteRecordbyid(27);
+        db.deleteRecordbyid(26);
+        db.deleteRecordbyid(2);
+        db.deleteRecordbyid(4);
+        db.deleteRecordbyid(7);
+
+
+
+        //delete by object
+
+        contact1.getName();
+        db.deleteRecord(contact1);
+
+
+
+
+
+
+
+         int affected= db.updateRecord(contact1);
+        Log.d("hamza", "kitni rows affected hoiyen "+affected);
 
 
         // work for select
