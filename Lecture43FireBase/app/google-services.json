@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "997703690960",
+    "project_id": "fir-lect-664bf",
+    "storage_bucket": "fir-lect-664bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997703690960:android:5487810be4c7d68fb78cd5",
+        "android_client_info": {
+          "package_name": "com.example.lecture43firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997703690960-imm0979jvhs0777edaf24f6eiikbt8uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsIpoKzZlccw-mMcrazlaoLjZbhRiyNn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997703690960-imm0979jvhs0777edaf24f6eiikbt8uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

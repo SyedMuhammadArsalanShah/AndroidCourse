@@ -82,18 +82,29 @@ class Data extends SQLiteOpenHelper {
         return  db.update(Params.DB_TABLE,values,Params.KEY_ID+"=?" ,new String[]{String.valueOf(contact.getId())});
 
     }
-    //byusing object
-    public void deleteRecord(Contact contact){
-        SQLiteDatabase db  = this.getWritableDatabase();
 
-       db.delete(Params.DB_TABLE,Params.KEY_ID+"=?" ,new String[]{String.valueOf(contact.getId())});
-       db.close();
-    }
+
 
     public void deleteRecordbyid(int id){
         SQLiteDatabase db  = this.getWritableDatabase();
-
         db.delete(Params.DB_TABLE,Params.KEY_ID+"=?" ,new String[]{String.valueOf(id)});
         db.close();
+    }
+
+
+
+
+
+    public int counter(){
+        String query="Select * from "+Params.DB_TABLE;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor= db.rawQuery(query, null );
+        return cursor.getCount();
+
+
+
+
+
+
     }
 }
